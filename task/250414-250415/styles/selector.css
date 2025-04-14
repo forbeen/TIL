@@ -1,18 +1,18 @@
-#weather {}
-#weather h1 {}
-#weather .area {}
-#weather .temperature {}
+#weather {background-color: #eee;}
+#weather h1 {color: darkslateblue;}
+#weather .area {background-color: aquamarine;}
+#weather .temperature {color: red;}
 #weather p {}
-#weather .sub_title {}
-#weather .humidity {}
-#weather .dust {}
-#weather .result {}
+#weather .sub_title {color: darkslateblue;}
+#weather .humidity {background-color: aquamarine;}
+#weather .dust {background-color: aquamarine;}
+#weather .result {background-color: #111; color: white;}
 /* 여기까지 날씨 */
-#news {}
-#news > a{}
-#news .box {}
+#news {background-color: #aaa;}
+#news > a{background-color:rgba(250, 0, 160, 0.7);}
+#news .box {background-color: cornflowerblue;}
 #news .box a {}
-#news .box a h2 {}
+#news .box a h2 {color: orangered;}
 #news .box a p {}
-#news > p {}
-#news > p span {}
+#news > p {color: white;}
+#news > p span {color: purple;}
