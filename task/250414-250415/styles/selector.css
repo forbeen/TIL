@@ -1,0 +1,18 @@
+#weather {}
+#weather h1 {}
+#weather .area {}
+#weather .temperature {}
+#weather p {}
+#weather .sub_title {}
+#weather .humidity {}
+#weather .dust {}
+#weather .result {}
+/* 여기까지 날씨 */
+#news {}
+#news > a{}
+#news .box {}
+#news .box a {}
+#news .box a h2 {}
+#news .box a p {}
+#news > p {}
+#news > p span {}
