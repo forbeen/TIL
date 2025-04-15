@@ -45,6 +45,9 @@
 * `<a href="./basic/index.html"></a>`링크태그에 묶여있는 무언가를 클릭했을 때 베이직 폴더에 있는 인덱스 파일로 이동하겠다는 말 (상대경로링크)
 * `<a href="./basic/index.html#main"></a>`링크태그에 묶여있는 무언가를 클릭했을 때 베이직 폴더에 있는 인덱스 파일에 "메인"으로 이동하겠다는 말 (상대경로링크+바로가기링크)
 ----
+### css프리텐다드 `link`주소
+* `<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />`
+----
 ### 막혔던, 궁금했던 사항들
 * basic_01파일에서 했던 연습 중 궁금한게 생김. `br`태그는 솔직히 잘 안쓴다고함. 아직 css배우기 전이라 줄바꿈이 되어있는게 `br`태그를 쓴건지 긴가민가함 질문하니까 css처리한거였음 사실 `br`태그는 안쓰는게 맞았음!
 * 인용구를 사용하는 `q`(인라인), `blockquote`(블록) 태그들은 vs code에선 속성값인 `cite=""`에 링크를 적지만 사이트에선 클릭이 안된다캄
