@@ -48,12 +48,34 @@
 ### css프리텐다드 `link`주소
 * `<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />`
 ----
+## CSS Style Sheet
+* 외부스타일시트 파일 저장 **style**폴더에 `파일명.css`로 저장한다.
+* 위 파일 생성 후 CSS연결을 원하는 HTML파일 head위치에 `<link>`태그로 연결한다.
+* HTML작성 후 HTML의 모든 디자인형태를 초기화하는 `reset.css`도 반드시 연결해야한다.
+* 웹글꼴(Noto Sans KR, Pretendard 등) 연결 시 HTML파일에 `<link>`태그 연결!
+### head태그 내에 들어가는 link태그 작성 순서
+1. 웹글꼴 포함 기타 플러그인 연결 주소
+2. reset.css
+3. 해당 HTML별 디자인.css
+### 디자인 CSS 작성 시 작성 순서 빛 주의사항
+* **부모->자식**순서로 가장 바깥쪽 부모부터 먼저 선택자를 만들고 디자인한다.
+* 레이아웃 관련 요소에 `width, height` 속성 작성 시 영역 확인을 위한 `background-color`를 꼭 함께 작성해서 정확히 구분한다. 이 때 색상은 쉬운 영역 구분을 위한 `aqua, lime, yellow, pink`등의 밝은 색상 위주로 사용한다. 영역 확인과 디자인 작업을 모두 마친 후 위 색상은 제거로 마무리해야한다.
+* 실제 디자인에 들어가는 색상은 **rgba 또는 헥사코드**로 입력하고 테스트용으로 입력하는 임시 색상은 영문명으로 입력해야 한다.
+----
 ### 막혔던, 궁금했던 사항들
 * basic_01파일에서 했던 연습 중 궁금한게 생김. `br`태그는 솔직히 잘 안쓴다고함. 아직 css배우기 전이라 줄바꿈이 되어있는게 `br`태그를 쓴건지 긴가민가함 질문하니까 css처리한거였음 사실 `br`태그는 안쓰는게 맞았음!
 * 인용구를 사용하는 `q`(인라인), `blockquote`(블록) 태그들은 vs code에선 속성값인 `cite=""`에 링크를 적지만 사이트에선 클릭이 안된다캄
 * 인라인끼리 형제인데 왜 `span`으로 안묶음? -> `span`은 `div`로 묶을 수 있음 같은 위치내에 형제들을 확인하고 블록일 경우 `div`로 그룹지음. 잘 이해가 안가면 figjam들어가서 공부용 확인하기
 * 학원에서 이어받기 할때 ~~`git clone`하면 안됨!! 또 폴더를 내려받는거니까~~ (x) `git pull origin main` (o)
-* 지금은 이미지가 없지만 이미지가 들어오면 `img`태그 옆에 `span`태그로 구성된 글 태그들이 옆으로 적어지나? 이것도 css작업인가?(궁금)
-* ~~`img`태그때문에 옆에 있는 글씨들을 블록태그로 못쓰고 인라인태그로 잡아 `span`으로 묶은다음에 크게 `div`로 묶었는데 이렇게 하는게 맞나..흠..~~ 맞음! 해결완
-* 자세히보기가 박스로 되어있는데 이건 css작업이고 h3로 줘야하는게 맞나? 헐 클릭이 되가지고 넘어가는 부분이니까 아 링크겠구나~ (맞는거같음!?)
-* 유튜브 동영상 소스 적는 걸 배웠는데 보통 사이트들은 자동재생을 안켜두는걸로 기억하는데.. `autoplay`를 안주는게 기본인가? 주게되면 `autoplay랑 muted`를 반드시 같이주는거
+### 자주 이용하는 CSS 속성 값과 기본값
+* `letter-spacing` 자간 글자 사이의 거리 | 기본값 0 | {letter-spacing:-0.02;}
+* `line-height` 행간 문장 사이의 거리 | 기본값 1(100%) | {line-height:1.5;}
+* `font-size` 글꼴 크기 | 기본값 16px(1em) | {font-size:1rem;}
+* `color` 글자 색상 | {color:#111;} {color:rgba(0, 0, 255, 0.8);}
+* `background-color` 블록or인라인 영역 배경 색상 | {background-color:#fff;}
+* `width` 가로크기 | {width:50px;}
+* `height` 세로크기 | {height:50px;}
+* `margin` 선택영역 밖으로 떨어진 거리 | {margin-`top,bottom,left,right`:50px;}
+* `border-radius` 모서리 라운드값 | {border-radius:20px;}
+* `font-weight` 글꼴 두께 | 기본값400 | {font-weight:400;}
+* `font-family` 선택 글꼴 입력 | {font-family:'Noto Sans KR', '보조글꼴'  sans-serif;}
