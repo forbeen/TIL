@@ -11,8 +11,9 @@
 }
 #wrap .login_wrap {
     width:300px;
-    margin-left:auto;
-    margin-right:auto;
+    /* margin-left:auto;
+    margin-right:auto; */
+    margin:0 auto;
     letter-spacing:-0.2;
     text-align:left;/* forgot의 인라인 자식, 자손 왼쪽정렬 */
     /* 블록의 너비값을 부모보다 작게 설정했을 때 블록을 가운데 정렬하고 싶다면? 위와같이 margin-left,right:auto;적용하면 됨 */
