@@ -1,0 +1,75 @@
+#wrap {
+    background-color: #fff;
+    width:440px; height:956px;
+    padding-left:15px;
+    padding-right:15px;
+}
+#wrap h1 {
+    padding-top:152px;
+    font-size:2.5rem;
+    font-weight:700;
+    color:#050C9C;
+    margin-bottom:30px;
+}
+#wrap p {
+    margin-bottom:55px;
+    font-size:1rem;
+    color:#050C9C;
+} /* #wrap 모든 자식 */
+#wrap #login_info_area {
+    margin-bottom:56px;
+}
+#wrap #login_info_area .email_pw_login {}
+#wrap #login_info_area .email_pw_login dt {
+    color:#050C9C;
+    font-size:1.375rem;
+    font-weight:600;
+    margin-bottom:10px;
+}
+#wrap #login_info_area .email_pw_login dd {
+    line-height:44px;
+}
+#wrap #login_info_area .email_pw_login dd input {
+    padding-left:20px;
+    padding-right:20px;
+    width:410px; height:44px;
+    background-color: #fff;
+    border-radius: 30px;
+    border:1px solid #11235A;
+    margin-bottom:42px;
+}
+#wrap #login_info_area .email_pw_login .button_login {
+    margin-bottom:16px;
+}
+#wrap #login_info_area .email_pw_login dd #login_btn {
+    text-align:center;
+    width:410px; height:44px;
+    background-color:#050C9C;
+    border-radius:30px;
+    font-size:0.875rem;
+    font-weight:500;
+    color:#fff;
+}
+#wrap #login_info_area .email_pw_login dd .google_login {
+    display:block;
+    text-align:center;
+    width:410px; height:44px;
+    line-height:44px;
+    background-color: #fff;
+    border-radius: 30px;
+    border:1px solid #11235A;
+    font-size:0.875rem;
+    color: #11235A;
+}
+#wrap #login_info_area+p {
+    text-align:center;
+    font-size:0.75rem;
+}
+#wrap #login_info_area+p a {
+    font-weight:300;
+    color: #11235A;
+}
+#wrap #login_info_area+p a em {
+    font-weight:600;
+    color: #11235A;
+}

@@ -1,0 +1,53 @@
+#wrap {
+    width:440px;
+    height:956px;
+    text-align:center;/* 수평가운데 정렬, 인라인일때*/
+    background-color:#fff;/* 나중에 #fff로 바꾸기 */
+}
+#wrap #intro_logo {}
+#wrap #intro_logo img {
+    margin-top:254px;
+    margin-bottom:73px;
+}
+#wrap .login_wrap {
+    width:300px;
+    margin-left:auto;
+    margin-right:auto;
+    letter-spacing:-0.2;
+    text-align:left;/* forgot의 인라인 자식, 자손 왼쪽정렬 */
+    /* 블록의 너비값을 부모보다 작게 설정했을 때 블록을 가운데 정렬하고 싶다면? 위와같이 margin-left,right:auto;적용하면 됨 */
+}
+#wrap .login_wrap a {
+    display:block;/* 블록의 너비는 부모 너비의 100%와 같다 */
+    text-align:center;/* 글자보다 넓은 너비를 가진 a의 자식글자를 가운데정렬 */
+}
+#wrap .login_wrap .login {
+    background-color:#050C9C;
+    color:#fff;
+    height:40px;
+    line-height:40px;
+    font-size:0.875rem;/* 14px */
+    font-weight:500;
+    border-radius:30px;
+}
+#wrap .login_wrap .sign_up {
+    background-color: #fff;
+    color:#11235A;
+    height:40px;
+    line-height:40px;
+    font-size:0.875rem;
+    font-weight:500;
+    margin-top:16px;
+    margin-bottom:16px;
+    border-radius:30px;
+    /* border:선두께 선모양 선색상; */
+    border: 1px solid #11235A;
+}
+#wrap .login_wrap .forgot {
+    font-size:0.75rem; /* 12px */
+    display:inline;
+}
+#wrap .login_wrap .forgot em {
+    color: #11235A;
+    text-decoration-line:underline;
+}
