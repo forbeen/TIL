@@ -6,8 +6,8 @@
 }
 #wrap h1 {
     padding-top:152px;
-    font-size:2.5rem;
-    font-weight:700;
+    font-size:2.5rem; /* 폰트사이즈 40px이런거 */
+    font-weight:700; /* 폰트 두께 bold */
     color:#050C9C;
     margin-bottom:30px;
 }
@@ -29,14 +29,21 @@
 #wrap #login_info_area .email_pw_login dd {
     line-height:44px;
 }
+#wrap #login_info_area .email_pw_login dd input::placeholder {/* 속성 선택자 확인 방법 */
+    font-size:0.875rem;
+    color:#11235A;
+}
 #wrap #login_info_area .email_pw_login dd input {
     padding-left:20px;
     padding-right:20px;
-    width:410px; height:44px;
+    padding-top:15px;
+    padding-bottom:15px;
+    width:410px;
     background-color: #fff;
     border-radius: 30px;
     border:1px solid #11235A;
     margin-bottom:42px;
+    color: #11235A; /* 그냥 입력할때 색상주는거 */
 }
 #wrap #login_info_area .email_pw_login .button_login {
     margin-bottom:16px;

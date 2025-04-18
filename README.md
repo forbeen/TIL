@@ -75,6 +75,6 @@
 * `font-family` 선택 글꼴 입력 | {font-family:'Noto Sans KR', '보조글꼴'  sans-serif;}
 ----
 ### 막혔던, 궁금했던 사항들 (해결하면 하루 이틀 후 지움)
-* 인용구를 사용하는 `q`(인라인), `blockquote`(블록) 태그들은 vs code에선 속성값인 `cite=""`에 링크를 적지만 사이트에선 클릭이 안된다캄
 * 인라인끼리 형제인데 왜 `span`으로 안묶음? -> `span`은 `div`로 묶을 수 있음 같은 위치내에 형제들을 확인하고 블록일 경우 `div`로 그룹지음. 잘 이해가 안가면 figjam들어가서 공부용 확인하기
 * 학원에서 이어받기 할때 ~~`git clone`하면 안됨!! 또 폴더를 내려받는거니까~~ (x) `git pull origin main` (o)
+* input태그의 속성 수정하고싶을 때 선택자는 `input::placeholder`이렇게 적어야함 / 글고 각 속성별로 문법이 다르다는
