@@ -1,0 +1,41 @@
+/* bg.CSS */
+.bg {
+    width:1000px;
+    height:1000px;
+    background-repeat:no-repeat;
+}
+.bg1 {
+    background:yellow url(https://i.pinimg.com/236x/c5/cd/5a/c5cd5a42527fd6f95177f846395cd7b9.jpg) right center;
+    /* 이렇게 통합으로 썼을 경우 위에서 속성값을 줘도 아래가 덮어씌우기때문에 안적은 부분은 다시 기본값으로 적용됨 */
+    /* background-color:yellow;
+    background-image:url(https://i.pinimg.com/236x/e2/5e/3b/e25e3b1cf8c50b6db617734c976b6885.jpg);
+    /*     background-repeat:no-repeat; */
+    /*     background-position:center center;
+    background-size:cover; */
+}
+.bg2 {
+    /* background-color:aqua;
+    background-image:url(https://i.pinimg.com/736x/9f/26/db/9f26db1b3ab13fb725306517c09ee83d.jpg);
+    background-position:center 80%;
+    /* background-size:cover; *//* 이미지 크기로 배경을 덮어씌우는거 이미지 잘릴 수 있음 */
+    background:red url(https://i.pinimg.com/736x/9f/26/db/9f26db1b3ab13fb725306517c09ee83d.jpg) repeat scroll center 50%;
+    background-size:1200px auto;
+}
+.bg3 {
+    /* background-color: blueviolet;
+    background-image:url(../image/test.jpg);
+    background-repeat:repeat-x;
+    /* background-position:50% 80%; */
+    /* background-position:0 0; *//* xy축 조절하면 이미지 잘리는거나 위치조정 가능 */
+    /* background-size:cover; *//* 요소안에 이미지가 전부 보이게 조정 */
+    background:pink url(../image/test.jpg) no-repeat fixed center 30% / cover;
+}
+.bg4 {
+    height:3000px;
+    /* background-image:url(https://i.pinimg.com/736x/7d/da/65/7dda650084eda1c734688fcf656ff310.jpg);
+    background-color:lightpink;
+    background-position:left;
+    background-size:contain;
+    background-attachment:fixed; */
+    background:chocolate url(https://i.pinimg.com/736x/2d/fe/16/2dfe16283f018b676e13815e4a185626.jpg) no-repeat fixed center 20% / cover;
+}
